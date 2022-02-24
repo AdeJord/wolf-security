@@ -10,16 +10,19 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import DrawerComponent from "./drawer";
+import mainLogo from "../images/logo-cropped.png";
+import "../App.css";
+
 
 const useStyles = makeStyles((theme) => ({
   navlinks: { marginLeft: theme.spacing(10), display: "flex" },
   logo: { flexGrow: "1", cursor: "pointer" },
   link: {
     textDecoration: "none",
-    color: "white",
+    color: "black",
     fontSize: "20px",
     marginLeft: theme.spacing(2),
-    "&:hover": { color: "yellow", borderBottom: "1px solid yellow" },
+    "&:hover": { color: "orange", borderBottom: "1px solid black" },
   },
 }));
 
@@ -33,17 +36,22 @@ function Navbar() {
       <CssBaseline />
       <Toolbar
         style={{
-          height: "100px",
-          background: "orange",
+          height: "120px",
+          background: "#fae017",
           color: "black",
         }}
       >
+        <div>
+        <img src={mainLogo} alt="mainLogo"/>
+        </div>
         <Typography
-          style={{ textAlign: "center" }}
+          style={{ textAlign: "center", fontSize: "2em" }}
           variant="h4"
           className={classes.logo}
         >
-          Wolves Security Solutions
+          <div>
+            Wolves Solutions Limited
+          </div>
         </Typography>
         {isMobile ? (
           <DrawerComponent />

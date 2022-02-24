@@ -1,4 +1,5 @@
 import { Typography } from "@material-ui/core";
+import '../App.css';
 
 function Contact() {
   return (
@@ -6,28 +7,25 @@ function Contact() {
       <div
         style={{
           height: "calc(100vh - 150px)",
-          padding: 7,
-          paddingTop: 2,
+          padding: "5rem",
+          paddingTop: 20,
           overflowY: "scroll",
-          overflowX: "hidden"
+          overflowX: "hidden",
+          background: "black",
+          color: "white"
+
         }}
       >
         <h3 style={{ textAlign: "center" }}>Contact Us</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate.Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate.Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate
-        </p>
+        <div>
+          <p>
+            Phone :- ***** *** ***
+          </p>
+          <p>
+            Director : ------
+          </p>
+
+        </div>
       </div>
     </Typography>
   );

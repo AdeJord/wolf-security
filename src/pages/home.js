@@ -1,16 +1,10 @@
 import { Typography } from "@material-ui/core";
+import '../App.css'
 
 function Home() {
   return (
+    <div className= "main">
     <Typography>
-      <div      
-      style={{
-        height: "calc(100vh - 150px)",
-        padding: 7,
-        paddingTop: 2,
-        overflowY: "scroll",
-        overflowX: "hidden"
-      }}>
       <h3 style={{textAlign: "center" }}>Some stuff about how good you are here.</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -27,8 +21,9 @@ function Home() {
         aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
         in voluptate
       </p>
-      </div>
+      <div className="triangle-up"></div>
     </Typography>
+    </div>
   );
 }
 export default Home;

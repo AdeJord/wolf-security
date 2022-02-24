@@ -16,7 +16,7 @@ import CloseIcon from "@material-ui/icons/Close";
 
 const useStyles = makeStyles(() => ({
   link: { textDecoration: "none", color: "blue", fontSize: "20px" },
-  icon: { color: "white" },
+  icon: { color: "black" },
   logo: { flexGrow: "1", cursor: "pointer" },
   draw: { background: "red" }
 }));
@@ -66,14 +66,7 @@ function DrawerComponent() {
               </ListItemText>
             </ListItem>
             <Divider />
-            <ListItem>
-              <ListItemText>
-                <Link to="/" className={classes.link}>
-                  FAQ d{" "}
-                </Link>
-              </ListItemText>
-            </ListItem>
-            <Divider />
+
           </List>
         </div>
       </Drawer>
